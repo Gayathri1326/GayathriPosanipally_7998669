@@ -1,0 +1,350 @@
+/* =========================
+   Header Styles
+========================= */
+
+#mainHeader {
+    background-color: navy;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* =========================
+   Event Card Styles
+========================= */
+
+.eventCard {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* =========================
+   Paragraph Styles
+========================= */
+
+p {
+    font-size: 16px;
+    color: #333333;
+}
+/* =========================
+   Global Styles
+========================= */
+
+/* Reset default spacing for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   Body Styles
+========================= */
+
+/* Set background and base font for entire website */
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* =========================
+   Header Styles
+========================= */
+
+/* Style for main page heading (CTA header) */
+.cta-header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* =========================
+   Button Styles
+========================= */
+
+/* Style for main CTA button */
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hover effect for CTA button */
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* =========================
+   Event Card Styles
+========================= */
+
+/* Container for event details */
+.eventCard {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+/* =========================
+   Selectors Playground
+========================= */
+
+/* Universal selector - resets all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element selector - styles all h2 tags */
+h2 {
+    color: darkgreen !important;
+    font-size: 28px;
+}
+
+/* ID selector - specific element styling */
+#mainHeader {
+    text-align: center;
+    background-color: navy;
+    color: white;
+    padding: 10px;
+}
+
+/* Class selector - reusable card style */
+.eventCard {
+    border: 1px solid gray;
+    padding: 15px;
+    margin: 15px;
+    background-color: #f9f9f9;
+}
+
+/* Grouping selector - applies to both h3 and p */
+h3, p {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* =========================
+   Color & Background Styling
+========================= */
+
+/* Page background with image + fallback color */
+body {
+    background-color: #f0f0f0; /* fallback color */
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Gradient header styling */
+#mainHeader {
+    background: linear-gradient(to right, #007BFF, #6610f2);
+    color: white;
+    padding: 15px;
+}
+
+/* Example RGBA usage */
+.eventCard {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* =========================
+   Typography: Fonts and Text
+========================= */
+
+/* Apply Google Font to entire page */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main heading style */
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
+
+/* Sub headings */
+h3 {
+    font-size: 22px;
+    font-style: normal;
+    text-transform: capitalize;
+}
+/* =========================
+   Link and List Styling
+========================= */
+
+/* Normal link */
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Visited link */
+a:visited {
+    color: purple;
+}
+
+/* Mouse hover effect */
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Active link */
+a:active {
+    color: green;
+}
+
+/* Navigation menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Navigation items */
+nav li {
+    padding: 5px 10px;
+}
+
+/* Activity list styling */
+.activityList {
+    list-style-type: square;
+    list-style-position: inside;
+    margin: 20px;
+    padding: 10px;
+}
+/* =========================
+   Table Styling
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table header and cells */
+th, td {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Header background */
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Zebra striping */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/* =========================
+   Box Model & Layout Control
+========================= */
+
+/* Event card spacing */
+.eventCard {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+/* Input field focus outline */
+input:focus {
+    outline: 3px solid orange;
+}
+
+/* Hidden element still takes space */
+.hiddenBox {
+    visibility: hidden;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Element completely removed */
+.noneBox {
+    display: none;
+    background-color: pink;
+    padding: 10px;
+}
+/* =========================
+   Multiple Columns Layout
+========================= */
+
+.newsArticle {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+    margin: 20px;
+    text-align: justify;
+}
+/* =========================
+   Responsive Web Design
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    /* Stack navigation vertically */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Reduce heading size */
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    /* Smaller paragraph text */
+    p {
+        font-size: 14px;
+    }
+
+    /* Flexible event cards */
+    .eventCard {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Responsive images */
+    img {
+        width: 80%;
+        height: auto;
+    }
+
+    /* Responsive table */
+    table {
+        font-size: 14px;
+    }
+}
