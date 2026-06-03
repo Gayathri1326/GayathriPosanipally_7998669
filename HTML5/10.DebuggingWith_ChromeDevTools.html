@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+        }
+
+        .box {
+            width: 300px;
+            padding: 20px;
+            margin: 50px auto;
+            background-color: white;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2>Chrome DevTools Debugging</h2>
+
+        <button onclick="calculateTotal()">
+            Click Me
+        </button>
+
+        <p id="result"></p>
+    </div>
+
+    <script>
+
+        function calculateTotal() {
+
+            // Variables
+            let price = 100;
+            let quantity = 3;
+
+            // Console logs
+            console.log("Price:", price);
+            console.log("Quantity:", quantity);
+
+            // Place breakpoint here in DevTools
+            let total = price * quantity;
+
+            console.log("Total:", total);
+
+            document.getElementById("result").innerHTML =
+                "Total Amount = " + total;
+        }
+
+    </script>
+
+</body>
+</html>
